@@ -1,8 +1,3 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.io.IOException;
-
 // 設問2. CardPickGameクラスの追加
 class CardPickGame {
 	//フィールド
@@ -11,7 +6,7 @@ class CardPickGame {
 	private int possessionCoin; //所持コイン数
 	private int oneSetSize; //1セットのサイズ
 	private int[][] deck;//　デッキを宣言。2d配列
-	private int playedCardCount; //デッキのカードが無くなったとき、管理するための変数
+	// private int playedCardCount; //デッキのカードが無くなったとき、管理するための変数
 
 	//デフォルトコンストラクタ
 	public CardPickGame(){
@@ -21,7 +16,7 @@ class CardPickGame {
 		this.maxBetCoin = 100;//最大ベット枚数
 		this.possessionCoin = 100;//スタートポイント数。ないとゲーム出来ない
 		this.deck = new int[this.deckSetCount][this.oneSetSize];
-		this.playedCardCount = 0; // デッキに残ってるカード数を数える
+		// this.playedCardCount = 0; // デッキに残ってるカード数を数える
 		
 		//デッキは2d配列です。数字はカードのポイント数
 		for(int i=0; i<this.deckSetCount; i++){
