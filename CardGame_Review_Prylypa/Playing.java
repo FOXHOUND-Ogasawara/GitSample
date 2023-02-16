@@ -1,3 +1,5 @@
+package CardGame_Review_Prylypa;
+
 class Playing {
 
     public static void main(String[] args) {

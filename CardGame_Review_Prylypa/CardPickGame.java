@@ -1,3 +1,5 @@
+package CardGame_Review_Prylypa;
+
 // 設問2. CardPickGameクラスの追加
 class CardPickGame {
 	//フィールド

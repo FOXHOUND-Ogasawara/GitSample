@@ -1,3 +1,5 @@
+package CardGame_Review_Prylypa;
+
 //外側のクラスを追加する
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
