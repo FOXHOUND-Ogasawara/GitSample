@@ -1,5 +1,7 @@
 package functionA;
 
 public class JavaFunctionA {
-    // 処理内容の変更
+    public static void main(String[] args) {
+        
+    }
 }

@@ -67,6 +67,8 @@ class HighAndLowGame {
 
       int randomNumA1 = GameUtils.getRandomInt(2);
       int randomNumA2 = GameUtils.getRandomInt(10);
+      System.out.println("randomNumA1:" + randomNumA1);
+      System.out.println("randomNumA1:" + randomNumA2);
       cardA = setDeck.get(randomNumA1).get(randomNumA2);
 
       int count = 0;

@@ -1,7 +1,6 @@
 package CardGame_Review_Prylypa;
 
 class Playing {
-
     public static void main(String[] args) {
         // 先のクラスにはthrows をよく使ったため、trycatch 必要
         int possessionCoin = 100;// スタートポイント
