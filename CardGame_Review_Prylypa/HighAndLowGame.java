@@ -106,7 +106,6 @@ class HighAndLowGame {
 
         return this.earnedCoinCount;
 
-        // return this.execute();
     }
 
     private List<Integer> getCard(List<Integer> cardList) {

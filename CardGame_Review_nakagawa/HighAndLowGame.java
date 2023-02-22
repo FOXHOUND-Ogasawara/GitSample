@@ -10,7 +10,8 @@ class HighAndLowGame {
   private int deckSetCount;
 
   public HighAndLowGame(int earnedCoinCount, int deckSetCount) {
-    this.earnedCoinCount = deckSetCount;
+    this.earnedCoinCount = earnedCoinCount;
+    this.deckSetCount = deckSetCount;
   }
 
   public int execute() {
@@ -61,14 +62,14 @@ class HighAndLowGame {
     for (int i = 0; i < this.deckSetCount; i++) {
       setDeck.add(i, onePair);
     }
+
     int cardA;
 
     while (true) {
 
       int randomNumA1 = GameUtils.getRandomInt(2);
       int randomNumA2 = GameUtils.getRandomInt(10);
-      System.out.println("randomNumA1:" + randomNumA1);
-      System.out.println("randomNumA1:" + randomNumA2);
+
       cardA = setDeck.get(randomNumA1).get(randomNumA2);
 
       int count = 0;
