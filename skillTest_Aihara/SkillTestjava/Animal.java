@@ -7,6 +7,7 @@ class Animal {
         this.name = name;
         this.age = age;
     }
+
     public void showProperties() {
         System.out.println("名前：" + name);
         System.out.println("年齢：" + age);
