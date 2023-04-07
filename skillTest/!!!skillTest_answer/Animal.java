@@ -1,4 +1,4 @@
-package skillTest;
+package skillTest_answer;
 
 // Q1
 public class Animal {

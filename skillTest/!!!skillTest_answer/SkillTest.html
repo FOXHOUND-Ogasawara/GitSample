@@ -150,12 +150,12 @@
     document.getElementById("addBtn").onclick = function () {
       let name = document.getElementById("name").value;
       let nickname = document.getElementById("nickname").value;
-      // Q3
+      // Q3回答
       if(count == 4){
         return false;
       }
 
-      // Q2
+      // Q2回答
       if (name == "" || nickname == "") {
         alert("入力に不備があります。");
         return false;
@@ -163,7 +163,7 @@
       else {
         count++;
         console.log(count);
-        // Q1
+        // Q1回答
         document.getElementById("result").innerHTML += name + "：" + nickname + "<br>";
       }
     };
