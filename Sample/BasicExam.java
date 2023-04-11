@@ -1,5 +1,26 @@
 public class BasicExam {
     public static void main(String[] args) {
+
+        int width = 2;
+        int height = 3;
+        int start = (width )/ 2;
+        int end = start;
+
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                if (j >= start && j <= end) {
+                    System.out.print(0);
+                } else {
+                    System.out.print(" ");
+                }
+            }
+
+            System.out.print("\n");
+
+            start --;
+            end ++;
+        }
+    }
         // for(int i = 1; i < 20; i++){
         // System.out.println("i = " + i + ": ●");
         // if(i % 2 == 0 && i % 3 == 0) {
@@ -35,37 +56,36 @@ public class BasicExam {
         // }
         // System.out.println(num2);
 
-        String str1 = "good";
-        String str2 = "godo";
-        System.out.println(permutation(str1, str2));
-    }
+    //     String str1 = "good";
+    //     String str2 = "godo";
+    //     System.out.println(permutation(str1, str2));
+    // }
 
-    public static boolean permutation(String s, String t) {
-        if (s.length() != t.length()) return false;
+    // public static boolean permutation(String s, String t) {
+    //     if (s.length() != t.length()) return false;
 
-        int[] letters = new int[128];
-        char[] s_array = s.toCharArray();
-        for (char c : s_array) {
-            letters[c]++;
-        }
+    //     int[] letters = new int[128];
+    //     char[] s_array = s.toCharArray();
+    //     for (char c : s_array) {
+    //         letters[c]++;
+    //     }
 
-        for(int num : letters){
-            System.out.print(num + " ");
-        }
+    //     for(int num : letters){
+    //         System.out.print(num + " ");
+    //     }
 
-        char[] t_array = t.toCharArray();
-        for(char c : t_array){
-            if(--letters[c] < 0){
-                return false;
-            }
-        }
+    //     char[] t_array = t.toCharArray();
+    //     for(char c : t_array){
+    //         if(--letters[c] < 0){
+    //             return false;
+    //         }
+    //     }
         // for (int i = 0; i < t.length(); i++) {
         //     int c = (int)t.charAt(i);
         //     if(--letters[c] < 0) {
         //         return false;
         //     }
         // }
-        return true;
-    }
+        // return true;
 
 }
