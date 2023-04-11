@@ -1,4 +1,3 @@
-package skillTest.skillTest_prylypa;
 //Listを利用準備
 import java.util.ArrayList;
 import java.util.List;

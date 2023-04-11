@@ -1,4 +1,3 @@
-package skillTest.skillTest_prylypa;
 class SkillTest {
     public static void main (String[] args){
         //問.01 回答の始まり-------------------------
