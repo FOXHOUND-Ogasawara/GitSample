@@ -1,4 +1,4 @@
-package skillTest_answer;
+package skillTest.skillTest_answer;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package skillTest_answer;
+package skillTest.skillTest_answer;
 
 // Q2
 public class SeaAnimal extends Animal{
