@@ -1,3 +1,5 @@
+package skillTest.skillTest_Kodama.java;
+
 import java.util.ArrayList;
 import java.util.List;
 

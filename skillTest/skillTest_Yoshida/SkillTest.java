@@ -1,3 +1,5 @@
+package skillTest.skillTest_Yoshida;
+
 public class SkillTest {
     public static void main(String[] args) {
         //Q1

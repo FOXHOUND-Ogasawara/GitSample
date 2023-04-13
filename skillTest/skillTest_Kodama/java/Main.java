@@ -1,3 +1,5 @@
+package skillTest.skillTest_Kodama.java;
+
 // Q4
 class Main{
     public static void main(String[] args){

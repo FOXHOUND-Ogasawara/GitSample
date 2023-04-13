@@ -1,3 +1,4 @@
+package skillTest.skillTest_prylypa;
 class SeaAnimal extends Animal {
     //フィールド宣言
     private int swimSpeed;

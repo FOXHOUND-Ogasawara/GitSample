@@ -1,3 +1,4 @@
+package skillTest.skillTest_Yoshida;
 public class SeaAnimal extends Animal{
     //Q2
     private int swimSpeed;

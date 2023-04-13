@@ -1,3 +1,5 @@
+package skillTest.skillTest_Yoshida;
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,3 +1,4 @@
+package skillTest.skillTest_Yoshida;
 public class Animal {
     //Q1
     private String name;

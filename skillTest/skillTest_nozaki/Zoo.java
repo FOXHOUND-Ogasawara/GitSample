@@ -1,3 +1,5 @@
+package skillTest.skillTest_nozaki;
+
 import java.util.List;
 import java.util.ArrayList;
 

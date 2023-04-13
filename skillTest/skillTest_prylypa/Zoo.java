@@ -1,3 +1,4 @@
+package skillTest.skillTest_prylypa;
 //Listを利用準備
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +15,7 @@ class Zoo{
     }
 
     //animals フィールドを繰り返し表示する。
-    public static void showAnimals() {
+    public void showAnimals() {
         setAnimals();//中身を作る
 
         //出力

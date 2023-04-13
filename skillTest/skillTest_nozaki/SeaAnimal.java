@@ -1,3 +1,5 @@
+package skillTest.skillTest_nozaki;
+
 public class SeaAnimal extends Animal{
 
     private int swimSpeed;

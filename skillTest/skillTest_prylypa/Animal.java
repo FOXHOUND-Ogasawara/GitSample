@@ -1,3 +1,4 @@
+package skillTest.skillTest_prylypa;
 class Animal {
     //フィールド宣言
     private String name;//動物の名前
