@@ -1,0 +1,85 @@
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+  <title>タイピングサンプル1</title>
+  <style type="text/css">
+    span {
+      font: small-caps 50px/1 sans-serif;
+      font-family: 'Rubik Distressed', cursive;
+    }
+
+    .q_text_answer {
+      color: #0000ff;
+    }
+
+    .q_text {
+      color: #000;
+    }
+
+    .container {
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      width: 50%;
+      height: 15%;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <span id="q_text_answer" class="q_text_answer"></span><span id="q_text" class="q_text">Push Space Key!!</span>
+    </div>
+  </div>
+  <script>
+
+    let Q = "FOX HOUND";//問題文
+    let Q_i = 0;//回答初期値・現在単語どこまで合っているか判定している文字番号
+    let Q_l = Q.length;//計算用の文字の長
+    let isPlaying = false;
+    let statTime;
+
+    window.addEventListener("keydown", push_Keydown);
+    function push_Keydown(event) {
+      let keyCode = event.key;
+      if (Q_l == Q_l - Q_i && keyCode == " ") {
+        // if (isPlaying) {
+        //   return;
+        // }
+        // isPlaying = true;
+        // statTime = Date.now();
+        document.getElementById("q_text_answer").innerHTML = ""; //スタート
+        document.getElementById("q_text").innerHTML = Q.substring(Q_i, Q_l); //問題を書き出す
+      }
+      if (Q.charAt(Q_i) == keyCode) { //押したキーが合っていたら
+        Q_i++; //判定する文章に１足す
+        document.getElementById("q_text_answer").innerHTML = Q.substring(0, Q_i); //正解を書き出す
+        document.getElementById("q_text").innerHTML = Q.substring(Q_i, Q_l); //問題を書き出す
+
+        if (Q_l - Q_i === 0) { //全部正解したら
+          Q_i = 0;//回答初期値・現在どこまで合っているか判定している文字番号
+          Q_l = Q.length;//計算用の文字の長さ
+          // const elapsedTime = ((Date.now() - statTime) /1000 ).toFixed(2);
+          document.getElementById("q_text").innerHTML = "<br/>Finish<br>Push Space Key<br>";　//+ elapsedTime; //スタート  
+        }
+      }
+
+    }
+
+
+
+  </script>
+</body>
+
+</html>
