@@ -3,7 +3,19 @@ public class CalcSample {
         int num1 = 10;
         int num2 = 5;
 
-        System.out.println(num1 += num2);
-        System.out.println(num1 -= num2);
+        boolean flg = true;
+
+        System.out.println(getResult(num2, flg));
     }
+
+    public static int getResult(int num, boolean flg){
+        if(flg == true){
+          return  num ++;
+        }
+        else {
+           return num --;
+        }
+    }
+
+
 }

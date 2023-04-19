@@ -2,5 +2,6 @@
     "java.project.sourcePaths": [
         "Sample",
         ""
-    ]
+    ],
+    "java.compile.nullAnalysis.mode": "automatic"
 }
