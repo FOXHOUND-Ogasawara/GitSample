@@ -5,7 +5,7 @@ public class Constructor {
         // パターン 1 は引数なしのコンストラクタを使用する
         Calculation calc = new Calculation();
         System.out.println("パターン1");
-        System.out.println(calc.getNum1() + " + " + calc.getNum2() + " = " + (calc.num1 + calc.num2));
+        System.out.println(calc.num1 + " + " + calc.num2 + " = " + (calc.num1 + calc.num2));
 
         // パターン 2 は引数が 1 つのコンストラクタを使用する
         Calculation calc2 = new Calculation(20);
