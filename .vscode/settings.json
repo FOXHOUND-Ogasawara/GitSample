@@ -1,7 +1,6 @@
 {
+    // "java.compile.nullAnalysis.mode": "automatic",
     "java.project.sourcePaths": [
-        "Sample",
-        ""
-    ],
-    "java.compile.nullAnalysis.mode": "automatic"
+        "GitSample"
+    ]
 }
