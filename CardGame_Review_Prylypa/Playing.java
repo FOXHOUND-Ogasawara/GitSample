@@ -9,6 +9,7 @@ class Playing {
         System.out.println("Welcome");// 最初の挨拶
         System.out.println("Please enter your name:");// ユーザー名を聞く
         userName = GameUtils.getInputString();
+        System.out.println(userName);
         while (!GameUtils.checkPattern(userName)) {// 繰り返し案件
             System.out.println("Does not match condition of the username");
             userName = GameUtils.getInputString();// 入力習得

@@ -118,6 +118,8 @@ class HighAndLowGame {
             setDeck.add(i, suits);
         }
 
+        System.out.println(cardList);
+
         // 乱数のカードを1枚取得する
         int tmpSuit = GameUtils.getRandomInt(deckSetCount);
         int tmpNumber = GameUtils.getRandomInt(suits.size());

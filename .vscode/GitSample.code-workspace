@@ -2,11 +2,26 @@
 	"folders": [
 		{
 			"path": ".."
+		},
+		{
+			"path": "../../../Downloads/ExeTest-Mukudai/Mukudai"
+		},
+		{
+			"path": "../../../Downloads/ExeTest_ogasawara.zip/Sakaguchi"
+		},
+		{
+			"path": "../../../Downloads/課題/ohdate"
+		},
+		{
+			"path": "../../../Downloads/ExeTest_otsuki"
+		},
+		{
+			"path": "../../../Downloads/ExeTest_ogasawara_NishiyamaMisaki"
 		}
 	],
 	"settings": {
 		"java.project.sourcePaths": [
-			"GitSample"
+			""
 		],
 		"java.compile.nullAnalysis.mode": "automatic"
 	}
