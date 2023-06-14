@@ -1,15 +1,14 @@
+
+
 public class ExeTest {
     public static void main(String[] args) {
         Animal[] animals = new Animal[2];
 
-        Cat cat = new Cat("猫");
-        cat.bark();
-
-        animals[0] = new Cat("猫");
-        animals[1] = new Dog("犬");
+        animals[0] = new Cat("タマ");
+        animals[1] = new Dog("ポチ");
 
         for (int i = 0; i < animals.length; i++) {
-            animals[i].bark();
+            animals[i].show();
         }
     }
 }

@@ -1,6 +1,10 @@
 {
     // "java.compile.nullAnalysis.mode": "automatic",
     "java.project.sourcePaths": [
-        "GitSample"
-    ]
+        "skiploop_ans",
+        "skipLoop",
+        "classTest",
+        ""
+    ],
+    "java.compile.nullAnalysis.mode": "automatic"
 }

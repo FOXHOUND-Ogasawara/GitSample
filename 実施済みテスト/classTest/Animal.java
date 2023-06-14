@@ -1,4 +1,6 @@
+
 public class Animal {
+
     private String name;
 
     public Animal(String name){
@@ -14,6 +16,11 @@ public class Animal {
     }
 
     public void bark(){
-        System.out.println(this.name + "は鳴きます");
+        System.out.println(this.name + "は鳴き声をあげます");
+    }
+
+    public void show(){
+        System.out.println("名前は" + this.getName());
+        this.bark();
     }
 }

@@ -9,4 +9,14 @@ public class Cat extends Animal {
         System.out.println(super.getName() + "はニャーと鳴きます。" );
     }
 
+    public void tear(){
+        System.out.println(super.getName() + "は爪でひっかきます。");
+    }
+
+    @Override
+    public void show(){
+        this.bark();
+        this.tear();
+    }
+
 }

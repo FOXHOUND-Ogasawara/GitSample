@@ -1,8 +1,16 @@
 package override;
 
+import java.awt.Polygon;
+
 public class Execution {
     public static void main(String[] args) {
         Shape shape = new Shape();
+
+        Polygon p = new Polygon();
+
+        p.setCorner(5);
+
+        System.out.println("この多角形の角の数は"+ p.getCorner());
 
         // shape.p.introduction();
         // shape.s.introduction();

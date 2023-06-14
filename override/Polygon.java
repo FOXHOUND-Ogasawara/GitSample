@@ -1,14 +1,22 @@
 package override;
 
+import Sample.CalcSample;
+
 class Polygon {
 
-    private int num;
+    private int corner;
+
+    public Polygon(){}
 
     public void introduction() {
         System.out.println("多角形です。");
     }
 
-    public void setNum(int num){
-        this.num = num;
+    public int getCorner() {
+        return corner;
+    }
+
+    public void setCorner(int corner) {
+        this.corner = corner;
     }
 }
