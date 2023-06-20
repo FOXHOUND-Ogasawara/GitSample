@@ -1,4 +1,4 @@
-public class Main {
+public class Main03 {
     public static void main(String[] args) {
         House house = new House("My House", 2, 4);
         house.show();
