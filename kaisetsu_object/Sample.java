@@ -1,3 +1,5 @@
+package kaisetsu_object;
+
 public class Sample {
     public static void main(String[] args) {
 
@@ -6,7 +8,7 @@ public class Sample {
         member.name = "山田太郎";
         member.age = 22;
 
-        System.out.println(Cont.NAME_OUT + member.name);
+        System.out.println(Const.NAME_OUT + member.name);
 
         // String name = "";
 
