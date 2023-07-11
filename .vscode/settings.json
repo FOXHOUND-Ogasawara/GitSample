@@ -2,8 +2,10 @@
     // "java.compile.nullAnalysis.mode": "automatic",
     "java.project.sourcePaths": [
         "classTest03_ans",
+        "classTest02_kai/classTest02_日和佐亮介",
         "classTest02_ans",
-        "classTest02_kai/classTest02_日和佐亮介"
+        ""
     ],
-    "java.compile.nullAnalysis.mode": "automatic"
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.debug.settings.onBuildFailureProceed": true
 }
