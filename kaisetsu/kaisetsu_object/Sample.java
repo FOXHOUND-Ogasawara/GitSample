@@ -1,4 +1,4 @@
-package kaisetsu_object;
+package kaisetsu.kaisetsu_object;
 
 public class Sample {
     public static void main(String[] args) {

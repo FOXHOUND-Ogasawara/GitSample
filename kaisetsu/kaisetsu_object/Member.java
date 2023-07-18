@@ -1,4 +1,4 @@
-package kaisetsu_object;
+package kaisetsu.kaisetsu_object;
 
 public class Member {
    public String name = "";
