@@ -1,4 +1,4 @@
-package kadai02_Ans;
+package 実施済みテスト.kadai02_Ans;
 
 class Bicycle extends Vehicle {
     public Bicycle(int speed) {
