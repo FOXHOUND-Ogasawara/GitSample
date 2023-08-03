@@ -1,4 +1,4 @@
-package exception;
+package kaisetsu.exception;
 
 public class Teacher {
     public static void main(String[] args) throws SpecException{

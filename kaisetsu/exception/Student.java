@@ -1,4 +1,4 @@
-package exception;
+package kaisetsu.exception;
 
 public class Student {
     public Homework doHomework(String title) {
