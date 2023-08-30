@@ -12,9 +12,14 @@ import java.util.List;
 public class TaskManager {
     public static void main(String[] args) {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        List<Task> tasks = new ArrayList<>();
-
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+        List<Task> tasks = new ArrayList<Task>();
+        List<Object> sampleTaskData = new ArrayList<Object>();
+        sampleTaskData.add("タスク管理課題");
+        sampleTaskData.add(LocalDateTime.parse("2023-08-31 23:59", formatter));
         try {
+            Task sampleTask = new Task(sampleTaskData);
+            tasks.add(sampleTask);
             while (true) {
                 System.out.println("1. タスク追加");
                 System.out.println("2. タスク一覧表示");
@@ -28,7 +33,6 @@ public class TaskManager {
 
                     System.out.print("タスクの期限（yyyy-MM-dd HH:mm）を入力してください: ");
                     String dueDateString = reader.readLine();
-                    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
                     LocalDateTime dueDate = LocalDateTime.parse(dueDateString, formatter);
 
                     addTask(tasks, title, dueDate);
@@ -40,17 +44,23 @@ public class TaskManager {
                     System.out.println("無効な選択です。");
                 }
             }
-        } catch (NumberFormatException | IOException | DateTimeParseException e) {
+        } catch (IOException | NumberFormatException | DateTimeParseException e) {
             System.out.println("無効な入力です。");
+        } catch (IllegalArgumentException e) {
+            System.out.println("データが不正です。");
         } finally {
             System.out.println("プログラムを終了します。");
         }
     }
 
     static void addTask(List<Task> tasks, String title, LocalDateTime dueDate) {
-        Task task = new Task(title, dueDate);
+        List<Object> taskData = new ArrayList<Object>();
+        taskData.add(title);
+        taskData.add(dueDate);
+        Task task = new Task(taskData);
         tasks.add(task);
         System.out.println("タスクが追加されました。");
+        displayTasks(tasks);
     }
 
     static void displayTasks(List<Task> tasks) {
@@ -65,9 +75,19 @@ class Task {
     private String title;
     private LocalDateTime dueDate;
 
-    public Task(String title, LocalDateTime dueDate) {
-        this.title = title;
-        this.dueDate = dueDate;
+    public Task(List<Object> taskData) {
+        if(taskData.size() != 2) {
+            throw new IllegalArgumentException();
+        }
+        for (Object data : taskData) {
+            if (data instanceof String) {
+                title = (String) data;
+            } else if (data instanceof LocalDateTime) {
+                dueDate = (LocalDateTime) data;
+            } else {
+                throw new IllegalArgumentException();
+            }
+        }
     }
 
     public String showTask() {
