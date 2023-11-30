@@ -6,5 +6,6 @@ public class Main {
         as.setTate(6);
 
         System.out.println(as.getTate() + "*" + as.getYoko() + "=" + as.calc());
+        AccessSample.sample();
     }
 }

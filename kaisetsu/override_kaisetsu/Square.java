@@ -5,4 +5,5 @@ class Square extends Polygon {
     public void introduction() {
         System.out.println("正方形です。");
     }
+
 }

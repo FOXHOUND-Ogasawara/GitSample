@@ -1,10 +1,19 @@
 package kaisetsu;
 class Execution {
     public static void main(String[] args) {
-        // 以下に出力処理をコーディングする
-        Hanoi hanoi = new Hanoi();
-        System.out.println("円盤数 : " + hanoi.disks.length + "枚");
-        hanoi.moveDisk(hanoi.disks.length, hanoi.start, hanoi.goal, hanoi.tmp);
-        System.out.println("移動回数 : " + hanoi.moveCount + "回");
+        // パターン 1 は引数なしのコンストラクタを使用する
+        Calculation calc = new Calculation();
+        System.out.println("パターン1");
+        System.out.println(calc.num1 + " + " + calc.num2 + " = " + (calc.num1 + calc.num2));
+
+        // パターン 2 は引数が 1 つのコンストラクタを使用する
+        Calculation calc2 = new Calculation(20);
+        System.out.println("パターン2");
+        System.out.println(calc2.num1 + " + " + calc2.num2 + " = " + (calc2.num1 + calc2.num2));
+
+        // パターン 3 は引数が 2 つのコンストラクタを使用する
+        Calculation calc3 = new Calculation(30, 15);
+        System.out.println("パターン3");
+        System.out.println(calc3.num1 + " + " + calc3.num2 + " = " + (calc3.num1 + calc3.num2));
     }
 }

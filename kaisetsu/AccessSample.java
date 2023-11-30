@@ -15,7 +15,6 @@ public class AccessSample {
     }
 
     public int getTate(){
-        this.sample();
         return this.tate;
     }
 
@@ -27,7 +26,8 @@ public class AccessSample {
         this.tate = tate;
     }
 
-    private void sample(){
+    public void sample(){
+        System.out.println(getYoko());
 
     }
 
