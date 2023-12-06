@@ -81,9 +81,9 @@ class Task {
         }
         for (Object data : taskData) {
             if (data instanceof String) {
-                title = (String) data;
+                this.title = (String) data;
             } else if (data instanceof LocalDateTime) {
-                dueDate = (LocalDateTime) data;
+                this.dueDate = (LocalDateTime) data;
             } else {
                 throw new IllegalArgumentException();
             }
@@ -92,6 +92,6 @@ class Task {
 
     public String showTask() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
-        return "タイトル: " + title + " 期限: " + dueDate.format(formatter);
+        return "タイトル: " + this.title + " 期限: " + this.dueDate.format(formatter);
     }
 }
