@@ -1,4 +1,4 @@
-package Java確認テスト2;
+package Java確認テスト2模範解答;
 
 class Test2AAnswer {
     public static void main(String[] args) {

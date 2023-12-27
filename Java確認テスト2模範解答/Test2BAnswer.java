@@ -1,3 +1,5 @@
+package Java確認テスト2模範解答;
+
 class Character {
 
   public void showName() {

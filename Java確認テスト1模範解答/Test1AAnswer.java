@@ -1,3 +1,5 @@
+package Java確認テスト1模範解答;
+
 public class Test1AAnswer {
 
   public static void main(String args[]) {

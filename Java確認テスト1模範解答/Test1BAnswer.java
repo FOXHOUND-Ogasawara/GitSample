@@ -1,3 +1,5 @@
+package Java確認テスト1模範解答;
+
 class Vehicle {
 
   public void introduction() {
