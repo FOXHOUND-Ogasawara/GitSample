@@ -1,4 +1,4 @@
-package task;
+package newSkillTest1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TaskManager{
+public class TaskManager_ans {
     public static void main(String[] args) {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
@@ -30,34 +30,30 @@ public class TaskManager{
                 if (choice == 1) {
                     System.out.print("タスクのタイトルを入力してください: ");
                     String title = reader.readLine();
+
                     System.out.print("タスクの期限（yyyy-MM-dd HH:mm）を入力してください: ");
                     String dueDateString = reader.readLine();
                     LocalDateTime dueDate = LocalDateTime.parse(dueDateString, formatter);
+
                     addTask(tasks, title, dueDate);
-                    
-                    //Q4 タスクの追加処理を呼び出して動作確認
                 } else if (choice == 2) {
                     displayTasks(tasks);
-                    //Q3 タスクの一覧表示処理を呼び出して動作確認
                 } else if (choice == 3) {
                     break;
                 } else {
                     System.out.println("無効な選択です。");
                 }
             }
-        // Q2 catchの()内に数値、入力、日付の例外処理を実装してください。
-        } catch (NumberFormatException | IOException | DateTimeParseException e) {
+        } catch (IOException | NumberFormatException | DateTimeParseException e) {
             System.out.println("無効な入力です。");
-        // Q2 catchの()内に不正な引数の例外処理を実装してください。
         } catch (IllegalArgumentException e) {
-            System.out.println("不正なデータです。");
+            System.out.println("データが不正です。");
         } finally {
             System.out.println("プログラムを終了します。");
         }
     }
 
-    // Q4 addTaskメソッドを実装してください
-    static void addTask(List<Task> tasks, String title, LocalDateTime dueDate){
+    static void addTask(List<Task> tasks, String title, LocalDateTime dueDate) {
         List<Object> taskData = new ArrayList<Object>();
         taskData.add(title);
         taskData.add(dueDate);
@@ -66,12 +62,36 @@ public class TaskManager{
         System.out.println("タスクが追加されました。");
         displayTasks(tasks);
     }
-    // Q3 displayTasksメソッドを実装してください
-    static void displayTasks(List<Task> tasks){
+
+    static void displayTasks(List<Task> tasks) {
         System.out.println("タスク一覧:");
-        for(int i = 0; i < tasks.size(); i++){
-                System.out.println(tasks.get(i).showTask());
+        for (Task task : tasks) {
+            System.out.println(task.showTask());
+        }
+    }
+}
+
+class Task {
+    private String title;
+    private LocalDateTime dueDate;
+
+    public Task(List<Object> taskData) {
+        if(taskData.size() != 2) {
+            throw new IllegalArgumentException();
+        }
+        for (Object data : taskData) {
+            if (data instanceof String) {
+                this.title = (String) data;
+            } else if (data instanceof LocalDateTime) {
+                this.dueDate = (LocalDateTime) data;
+            } else {
+                throw new IllegalArgumentException();
             }
-        
+        }
+    }
+
+    public String showTask() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+        return "タイトル: " + this.title + " 期限: " + this.dueDate.format(formatter);
     }
 }
