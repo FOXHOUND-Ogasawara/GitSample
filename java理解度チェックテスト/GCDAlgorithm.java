@@ -1,3 +1,4 @@
+package java理解度チェックテスト;
 public class GCDAlgorithm {
     public static void main(String[] args) {
         // ステップ1: 2つの整数 num1 = 722, num2 = 171を用意する
@@ -14,7 +15,7 @@ public class GCDAlgorithm {
             num2 = num3;
         }
 
-        // ステップ3: num3 を answer に代入して出力をする
+        // ステップ3: num1 を answer に代入して出力をする
         int answer = num1;
         System.out.println("最大公約数は: " + answer);
     }

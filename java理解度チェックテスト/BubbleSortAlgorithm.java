@@ -1,3 +1,4 @@
+package java理解度チェックテスト;
 import java.util.Arrays;
 
 public class BubbleSortAlgorithm {
@@ -9,8 +10,8 @@ public class BubbleSortAlgorithm {
         for (int outer = 0; outer < array.length - 1; outer++) {
             for (int i = array.length - 1; i > outer; i--) {
                 // ステップ3: 内側のループの処理
+                // ステップ3-1: 比較してarray[i]がarray[i - 1]より小さい場合
                 if (array[i] < array[i - 1]) {
-                    // ステップ3-1: 比較してarray[i]がarray[i - 1]より小さい場合
                     // ステップ3-2: tmpにarray[i]を代入
                     int tmp = array[i];
                     // ステップ3-3: array[i]にarray[i - 1]を代入
