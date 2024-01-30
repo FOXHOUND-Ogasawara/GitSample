@@ -3,7 +3,7 @@ package keishoKaisetsu;
 public class Game {
     public static void main(String[] args) {
         // キャラクリ開始
-        Person player = new Person("太郎", "男性");
+        Person player = new Person("ロト", "男性");
 
         // ゲーム開始直後の初期表示位置の設定
         Place place = new Place();

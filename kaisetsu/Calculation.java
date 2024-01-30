@@ -6,16 +6,19 @@ class Calculation {
     public Calculation() {
         // 10 という定数を使用し引数が 1 つのコンストラクタを内部で呼び出す
         this(10);
+        System.out.println("引数なしが呼ばれた");
     }
 
     public Calculation(int num1) {
         // num1 と 5という定数を使用し引数が 2 つのコンストラクタを内部で呼び出す
         this(num1, 5);
+        System.out.println("引数1つが呼ばれた");
     }
 
     public Calculation(int num1, int num2) {
         // 引数をインスタンス変数に代入する
         this.num1 = num1;
         this.num2 = num2;
+        System.out.println("引数2つが呼ばれた");
     }
 }

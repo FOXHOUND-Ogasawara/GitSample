@@ -1,3 +1,4 @@
+package kaisetsu;
 public class SampleClass {
     int num;
 
