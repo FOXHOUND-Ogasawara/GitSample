@@ -1,4 +1,4 @@
-package keishoKaisetsu;
+package kaisetsu.keishoKaisetsu;
 
 public class Weapon extends Item{
 

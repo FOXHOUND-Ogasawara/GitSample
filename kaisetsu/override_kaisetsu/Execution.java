@@ -10,7 +10,6 @@ class Execution {
         }
         // for 文の場合
         for (int i = 0; i < shape.polygons.length; i++) {
-            // String str = shape.polygons[i].introduction();
             System.out.println(shape.polygons[i].introduction());
         }
     }

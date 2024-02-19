@@ -1,4 +1,4 @@
-package keishoKaisetsu;
+package kaisetsu.keishoKaisetsu;
 
 public class Person {
 

@@ -1,4 +1,4 @@
-package keishoKaisetsu;
+package kaisetsu.keishoKaisetsu;
 
 public class Game {
     public static void main(String[] args) {
